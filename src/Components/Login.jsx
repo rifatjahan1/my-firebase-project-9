@@ -1,17 +1,40 @@
-import React from 'react';
+import React, { use } from 'react';
 import { Link } from 'react-router';
+import { AuthContext } from '../Provider/AuthProvider';
 
 const Login = () => {
+    const { signInUser } = use(AuthContext);
+
+
+
+    const handleLogin = e => {
+        e.preventDefault();
+
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+        console.log(email, password);
+        // createUserWithEmailAndPassword
+        signInUser(email, password)
+            .then(result => {
+                const user = result.user;
+            })
+            .catch(error => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                alert(errorCode, errorMessage)
+            })
+
+    }
     return (
         <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded-xl shadow-md">
             <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
-            <form className="space-y-4">
+            <form onSubmit={handleLogin} className="space-y-4">
                 <div>
                     <label className="block text-sm font-medium text-gray-700">Email</label>
                     <input
                         type="email"
                         name="email"
-                         placeholder="Email"
+                        placeholder="Email"
                         required
                         className="w-full border input border-gray-300 rounded p-2"
                     />
@@ -21,7 +44,7 @@ const Login = () => {
                     <input
                         type="password"
                         name="password"
-                         placeholder="Password"
+                        placeholder="Password"
                         required
                         className="w-full input border border-gray-300 rounded p-2"
                     />
@@ -40,7 +63,7 @@ const Login = () => {
 
             <p className="mt-4 text-center text-sm">
                 Don't have an account?{' '}
-                 Please <Link className="underline text-blue-500" to='/register'> Register</Link>
+                Please <Link className="underline text-blue-500" to='/register'> Register</Link>
             </p>
 
             <div className="mt-6 text-center">

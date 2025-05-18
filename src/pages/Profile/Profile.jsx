@@ -1,10 +1,27 @@
-import React from 'react';
+import React, { use } from 'react';
+import { AuthContext } from '../../Provider/AuthProvider';
 
 const Profile = () => {
+    const { user } = use(AuthContext)
     return (
-        <div>
-            i am profile
+
+        <div className="hero  min-h-screen ">
+            
+                <div className=" flex flex-col gap-4 justify-center items-center bg-base-200 rounded-2xl shadow-2xl border border-blue-200 p-24">
+                    <h1 className="text-xl font-bold">{user.email}</h1>
+                    <div className="flex items-center space-x-2">
+                        <img
+
+                            src={user.photoURL || 'https://i.pravatar.cc/100'}
+                            alt="Profile"
+                            className="w-10 h-10 rounded-full border-2 border-blue-600 object-cover"
+                        />
+                    </div>
+                    <div><button className="btn btn-primary">Update</button></div>
+                </div>
+            
         </div>
+
     );
 };
 

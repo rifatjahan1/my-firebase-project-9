@@ -1,12 +1,11 @@
-# React + Vite
+What is Firebase?
+Answer
+Firebase is a Backend-as-a-Service (BaaS) platform developed by Google that helps developers build and scale apps quickly without managing traditional backend infrastructure..
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+what are Firebase's key features?
+Answer
+Realtime Database & Cloud Firestore: NoSQL databases for syncing data in real-time. Firebase Authentication: Supports email/password, social login (Google, Facebook), and more. Firebase Hosting: Fast and secure hosting for web apps. Cloud Functions: Run backend code in response to events (serverless). Cloud Storage: Store and serve large files like images and videos. Firebase Analytics, Crashlytics, and Performance Monitoring for app quality and user insights.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. How does Firebase Authentication work and what providers does it support?
+Answer
+Firebase Authentication manages user sign-in and identity verification. It handles authentication workflows and user session management, with built-in UI support. Supported Providers:1.Email/Password 2.Phone Number OAuth Providers: Google, Facebook, Twitter, GitHub, Microsoft, Apple Anonymous Authentication Custom Authentication via secure token

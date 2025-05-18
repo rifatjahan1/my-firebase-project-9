@@ -6,8 +6,8 @@ const Companies = ({ companies }) => {
         <div>
               <div className='grid grid-cols-1 lg:grid-cols-4 gap-4 mb-4 '>
                 {companies.map(company => (
-                    <div className="hero bg-gray-300 rounded-2xl  ">
-                        <Link key={company.id} to={`/companydetails/${company.id}`} className="">
+                    <div key={company.id} className="hero bg-gray-300 rounded-2xl  ">
+                        <Link  to={`/companydetails/${company.id}`} className="">
 
 
                             

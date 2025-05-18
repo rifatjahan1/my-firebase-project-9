@@ -73,13 +73,13 @@ const Navbar = () => {
                     {!user ? (
                         <>
 
-                            <li><Link to="/login" className="text-xl font-semibold">
+                            <li><NavLink  to="/login" className="text-xl font-semibold">
                                 Login
-                            </Link></li>
+                            </NavLink></li>
                             <li>
-                                <Link to="/register" className="text-xl font-semibold">
+                                <NavLink to="/register" className="text-xl font-semibold underline">
                                     Register
-                                </Link>
+                                </NavLink>
                             </li>
 
                         </>

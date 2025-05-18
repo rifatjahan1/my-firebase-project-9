@@ -12,7 +12,7 @@ const Extra2 = () => {
                     <h2 className="text-2xl  font-bold text-gray-900 mb-6 text-center">
                         Popular Categories
                     </h2>
-                    <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-sm">
+                    <ul className="grid grid-cols-1 lg:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-sm">
                         <li className="bg-orange-200 shadow rounded-lg p-4 text-center hover:bg-blue-50 transition duration-200">
                             Frontend Development
                         </li>

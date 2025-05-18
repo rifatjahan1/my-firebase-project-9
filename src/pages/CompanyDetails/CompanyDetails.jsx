@@ -12,7 +12,7 @@ const CompanyDetails = () => {
 
     if (!company) return <div className="p-6">Company not found.</div>;
     return (
-        <div>
+        <div className='py-12'>
                         <div className='text-center'>
                 <div className='flex items-center justify-center'>  
                      <img src={company.logo} alt={company.name} className="w-24 h-24 " />

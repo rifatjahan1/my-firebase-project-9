@@ -11,12 +11,15 @@ import Profile from "../pages/Profile/Profile";
 import Apply from "../Components/Apply/Apply";
 import ForgotPassword from "../pages/ForgotPassword/ForgotPassword";
 import CompanyDetails from "../pages/CompanyDetails/CompanyDetails";
+import ErrorPage from "../pages/ErrorPage";
+import Contact from "../Components/Contact/Contact";
 
 
 export const router = createBrowserRouter([
     {
         path: "/",
         Component: Root,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 index: true,
@@ -40,6 +43,10 @@ export const router = createBrowserRouter([
                 path: "/register",
                 Component: Register
             },
+             {
+                path: "/contact",
+                Component: Contact
+            },
             {
                 path: "/profile",
                 element: <PrivateRoute><Profile></Profile></PrivateRoute>
@@ -48,13 +55,14 @@ export const router = createBrowserRouter([
                 path: "/forgot-password",
                 Component: ForgotPassword
             },
-      {
-        path: '/companydetails/:id',
-        Component: CompanyDetails,
-        hydrateFallbackElement: <p>Loading, please wait.......</p>,
-        loader: () => fetch('../data.json').then(res => res.json()),
+            {
+                path: '/companydetails/:id',
+                Component: CompanyDetails,
+                hydrateFallbackElement: <p>Loading, please wait.......</p>,
+                loader: () => fetch('../data.json').then(res => res.json()),
 
-      },
+            },
+           
 
 
         ]

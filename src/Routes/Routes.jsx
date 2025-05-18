@@ -1,13 +1,14 @@
 import { createBrowserRouter } from "react-router";
 import Root from "../Layouts/Root";
 import Home from "../Components/Home/Home";
-import Apply from "../Components/Apply/Apply";
+
 import About from "../Components/About/About";
 import Login from "../Components/Login";
 import Register from "../Components/Register";
 
 import PrivateRoute from "../PrivateRoutes/PrivateRoute";
 import Profile from "../pages/Profile/Profile";
+import Apply from "../Components/Apply/Apply";
 
 export const router = createBrowserRouter([
   {
@@ -20,7 +21,7 @@ export const router = createBrowserRouter([
         },
         {
             path:"/apply",
-            Component:Apply
+             element:<PrivateRoute><Apply></Apply></PrivateRoute>
         },
         {
             path:"/about",

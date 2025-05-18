@@ -9,6 +9,8 @@ import Register from "../Components/Register";
 import PrivateRoute from "../PrivateRoutes/PrivateRoute";
 import Profile from "../pages/Profile/Profile";
 import Apply from "../Components/Apply/Apply";
+import ForgotPassword from "../pages/ForgotPassword/ForgotPassword";
+
 
 export const router = createBrowserRouter([
   {
@@ -38,6 +40,10 @@ export const router = createBrowserRouter([
         {
             path:"/profile",
             element:<PrivateRoute><Profile></Profile></PrivateRoute>
+        },
+         {
+            path:"/forgot-password",
+            Component: ForgotPassword
         },
 
 

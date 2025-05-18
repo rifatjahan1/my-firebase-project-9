@@ -77,7 +77,7 @@ const Navbar = () => {
                                 Login
                             </NavLink></li>
                             <li>
-                                <NavLink to="/register" className="text-xl font-semibold underline">
+                                <NavLink to="/register" className="text-xl font-semibold ">
                                     Register
                                 </NavLink>
                             </li>

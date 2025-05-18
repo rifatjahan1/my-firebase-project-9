@@ -11,11 +11,11 @@ const Extra1 = () => {
                     
                 </div>
                 <div className="border lg:border-0 lg:flex justify-between">
-                    <p>Junior Frontend - Shopify</p>
+                    <p>Junior Frontend - Google</p>
                     <p className="text-fuchsia-500 lg:font-semibold">70% Of Total Apply</p>
                 </div>
                 <div className="border lg:border-0 lg:flex justify-between">
-                    <p>React Intern - Netflix</p>
+                    <p>React Intern - Oracle</p>
                     <p className="text-red-600 font-semibold">65% Of Total Apply</p>
                     
                 </div>

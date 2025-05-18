@@ -18,14 +18,16 @@ const Navbar = () => {
     }
     const links = <>
         <li ><NavLink to="/">Home</NavLink></li>
-         <li ><NavLink to="/apply">All-Apply</NavLink></li>
+
         <li ><NavLink to="/about">About</NavLink></li>
+        <li ><NavLink to="/apply">All-Apply</NavLink></li>
         <li ><NavLink to="/contactus">Contact</NavLink></li>
+
         {user &&
-         <>
-        
-        <li ><NavLink to="/profile">profile</NavLink></li>
-        </>
+            <>
+
+                <li ><NavLink to="/profile">profile</NavLink></li>
+            </>
 
         }
 
@@ -65,15 +67,15 @@ const Navbar = () => {
             <div className="navbar-end  hidden lg:flex ">
 
                 <ul className="menu menu-horizontal px-1">
-            
 
-            
+
+
 
 
                     {!user ? (
                         <>
 
-                            <li><NavLink  to="/login" className="text-xl font-semibold">
+                            <li><NavLink to="/login" className="text-xl font-semibold">
                                 Login
                             </NavLink></li>
                             <li>
@@ -85,10 +87,10 @@ const Navbar = () => {
                         </>
 
                     ) : (
-                        
+
                         <>
-                                              
-                             <button className='me-6'onClick={() => navigate('/profile')} >
+
+                            <button className='me-6' onClick={() => navigate('/profile')} >
                                 <img
                                     src={user.photoURL || 'https://i.pravatar.cc/100'}
                                     alt="Profile"

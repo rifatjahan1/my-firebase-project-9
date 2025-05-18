@@ -10,7 +10,7 @@ const AuthProvider = ({children}) => {
     
     const[user,setUser]= useState();
     const [loading,setLoading]=useState(true);
-    console.log(user)
+
         const createUser = (email,password)=>{
             setLoading(true);
         return createUserWithEmailAndPassword(auth,email,password);
@@ -33,7 +33,7 @@ const AuthProvider = ({children}) => {
        
         useEffect(() =>{
         const unSubscribe =onAuthStateChanged(auth, currentUser =>{
-            //console.log('current user inside',currentUser);
+            
             setUser(currentUser);
             setLoading(false)
         })

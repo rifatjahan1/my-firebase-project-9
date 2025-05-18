@@ -26,10 +26,10 @@ const Login = () => {
      const handleGoogleLogin = () => {
         googleLogin()
                .then(result => {
-                console.log(result.user)
+                
             })
             .catch(error => {
-                console.log(error)
+            
             })
    
      };

@@ -6,6 +6,9 @@ import About from "../Components/About/About";
 import Login from "../Components/Login";
 import Register from "../Components/Register";
 
+import PrivateRoute from "../PrivateRoutes/PrivateRoute";
+import Profile from "../pages/Profile/Profile";
+
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -30,6 +33,10 @@ export const router = createBrowserRouter([
         {
             path:"/register",
             Component:Register
+        },
+        {
+            path:"/profile",
+            element:<PrivateRoute><Profile></Profile></PrivateRoute>
         },
 
 

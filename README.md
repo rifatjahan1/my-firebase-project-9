@@ -1,8 +1,10 @@
-What is Firebase?
+1.What is Firebase?
+
 Answer
 Firebase is a Backend-as-a-Service (BaaS) platform developed by Google that helps developers build and scale apps quickly without managing traditional backend infrastructure..
 
-what are Firebase's key features?
+2.what are Firebase's key features?
+
 Answer
 Realtime Database & Cloud Firestore: NoSQL databases for syncing data in real-time. Firebase Authentication: Supports email/password, social login (Google, Facebook), and more. Firebase Hosting: Fast and secure hosting for web apps. Cloud Functions: Run backend code in response to events (serverless). Cloud Storage: Store and serve large files like images and videos. Firebase Analytics, Crashlytics, and Performance Monitoring for app quality and user insights.
 

@@ -7,9 +7,22 @@ const ForgotPassword = () => {
   const [email, setEmail] = useState(initialEmail);
 
   const handleReset = () => {
-    // For demo purposes: redirect to Gmail
-    window.location.href = 'https://mail.google.com';
-  };
+  if (!email.trim()) {
+    alert("Please enter your email address.");
+    return;
+  }
+
+  // Optional: basic email format validation
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert("Please enter a valid email address.");
+    return;
+  }
+
+  // All good, redirect to Gmail
+  window.location.href = 'https://mail.google.com';
+};
+
 
   return (
     <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded-xl shadow-md">
@@ -17,9 +30,10 @@ const ForgotPassword = () => {
       <input
         type="email"
         className="w-full border border-gray-300 p-2 rounded mb-4"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
+         value={email}
+         onChange={(e) => setEmail(e.target.value)}
         placeholder="Enter your email"
+        required
       />
       <button
         onClick={handleReset}

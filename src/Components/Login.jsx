@@ -1,5 +1,5 @@
 import React, { use } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router'; 
+import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../Provider/AuthProvider';
 
 const Login = () => {
@@ -23,9 +23,9 @@ const Login = () => {
             });
     };
 
-    const handleForgotPassword = () => {
-        navigate('/forgot-password');
-    };
+    // const handleForgotPassword = () => {
+    //     navigate('/forgot-password', { state: { email } });
+    // };
 
     return (
         <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded-xl shadow-md">
@@ -38,7 +38,9 @@ const Login = () => {
                         name="email"
                         placeholder="Email"
                         required
-                       
+                        // value={email}
+                        // onChange={(e) => setEmail(e.target.value)}
+
                         className="w-full border input border-gray-300 rounded p-2"
                     />
                 </div>
@@ -53,11 +55,11 @@ const Login = () => {
                     />
                 </div>
 
-                <div className="text-right text-sm">
+                <div className="text-right text-sm  text-blue-600  py-2 rounded hover:text-blue-700">
                     <button
                         type="button"
-                        onClick={handleForgotPassword}
-                        className="text-blue-600 hover:underline"
+                        onClick={() => navigate('/forgot-password')}
+
                     >
                         Forgot Password?
                     </button>

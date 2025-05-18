@@ -1,0 +1,219 @@
+[
+    {
+      "id": "1",
+      "name": "Google",
+      "logo": "https://i.ibb.co/4RvDDzMz/google.png",
+      "location": "San Francisco, CA",
+      "website": "https://technova.io",
+      "industry": "Software Development",
+      "jobs": [
+        {
+          "id": "job-001",
+          "title": "Frontend Developer",
+          "bannerImage": "https://i.ibb.co/5hpJCRTs/rsz-1paymo-vg3ji6ciyk8-unsplash-1.jpg",
+          "location": "Remote",
+          "salary": "$70,000 - $90,000",
+          "jobType": "Full-time",
+          "time":"9A.M - 6P.M",
+          "description": "Develop and maintain front-end features for our SaaS platform.",
+          "requirements": [
+            "Proficient in HTML, CSS, and JavaScript",
+            "Experience with React or Vue.js",
+            "Familiarity with RESTful APIs",
+            "Good understanding of responsive design",
+            "Excellent problem-solving skills"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Microsoft",
+      "logo": "https://i.ibb.co/WpzXPR8w/microsoft.png",
+      "location": "Austin, TX",
+      "website": "https://healthsync.org",
+      "industry": "Healthcare Technology",
+      "jobs": [
+        {
+          "id": "job-002",
+          "title": "Backend Developer",
+          "bannerImage": "https://i.ibb.co/mFTLF2wd/rsz-2flipsnack-mmsx5lnp8tw-unsplash.jpg",
+          "location": "Austin, TX",
+          "salary": "$85,000 - $105,000",
+          "jobType": "Full-time",
+          "time":"9A.M - 6P.M",
+          "description": "Build and maintain secure, scalable backend services.",
+          "requirements": [
+            "Strong knowledge of Node.js or Python",
+            "Database experience (PostgreSQL, MongoDB)",
+            "Experience with microservices architecture",
+            "Familiarity with cloud platforms (AWS/GCP)",
+            "Unit testing and CI/CD knowledge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Amazon",
+      "logo": "https://i.ibb.co/xqZfgTsT/amazon.png",
+      "location": "Berlin, Germany",
+      "website": "https://greenspark.co",
+      "industry": "Renewable Energy",
+      "jobs": [
+        {
+          "id": "job-003",
+          "title": "Data Analyst",
+          "bannerImage": "https://i.ibb.co/XxmKDmZR/rsz-1pexels-seven11nash-380769.jpg",
+          "location": "Berlin, Germany",
+          "salary": "€50,000 - €70,000",
+          "jobType": "Full-time",
+          "time":"9A.M - 6P.M",
+          "description": "Analyze renewable energy data and support decision-making processes.",
+          "requirements": [
+            "Experience with SQL and data visualization tools",
+            "Strong analytical and statistical skills",
+            "Knowledge of Python or R",
+            "Excellent communication skills",
+            "Energy industry knowledge a plus"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Apple",
+      "logo": "https://i.ibb.co/hRvNjS7d/apple.png",
+      "location": "London, UK",
+      "website": "https://educloud.com",
+      "industry": "EdTech",
+      "jobs": [
+        {
+          "id": "job-004",
+          "title": "Product Manager",
+          "bannerImage": "https://i.ibb.co/LdgK7XtY/rsz-1pexels-olly-840996.jpg",
+          "location": "Remote",
+          "salary": "£60,000 - £80,000",
+          "jobType": "Full-time",
+          "time":"9A.M - 6P.M",
+          "description": "Manage the roadmap and features of our online learning platform.",
+          "requirements": [
+            "3+ years experience in product management",
+            "Strong communication and organizational skills",
+            "Technical background preferred",
+            "Experience with Agile methodologies",
+            "Knowledge of EdTech is a bonus"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Facebook",
+      "logo": "https://i.ibb.co/zTtTS5z9/facebook.png",
+      "location": "Detroit, MI",
+      "website": "https://autoai.com",
+      "industry": "Artificial Intelligence",
+      "jobs": [
+        {
+          "id": "job-005",
+          "title": "Machine Learning Engineer",
+          "bannerImage": "https://i.ibb.co/LXqQcWsB/rsz-pexels-pixabay-265072.jpg",
+          "location": "Detroit, MI",
+          "salary": "$100,000 - $130,000",
+          "jobType": "Full-time",
+          "time":"9A.M - 6P.M",
+          "description": "Develop and deploy machine learning models for autonomous vehicles.",
+          "requirements": [
+            "Strong knowledge of Python and TensorFlow/PyTorch",
+            "Experience with real-time data processing",
+            "Familiarity with computer vision",
+            "Understanding of vehicle systems",
+            "Good teamwork and communication skills"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Oracle",
+      "logo": "https://i.ibb.co/9903qqBW/oracle.png",
+      "location": "Barcelona, Spain",
+      "website": "https://travelloop.com",
+      "industry": "Travel & Hospitality",
+      "jobs": [
+        {
+          "id": "job-006",
+          "title": "Mobile App Developer",
+          "bannerImage": "https://i.ibb.co/0j2Lr3QK/rsz-1pexels-cowomen-1058097-2041627.jpg",
+          "location": "Remote",
+          "salary": "€45,000 - €60,000",
+          "jobType": "Full-time",
+          "time":"9A.M - 6P.M",
+          "description": "Develop and maintain Android and iOS apps for travel booking.",
+          "requirements": [
+            "Flutter or React Native experience",
+            "REST API integration",
+            "Strong debugging and UI skills",
+            "Agile development experience",
+            "Version control with Git"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Cisco",
+      "logo": "https://i.ibb.co/HLcgtx9h/cisco.png",
+      "location": "New York, NY",
+      "website": "https://finxpert.com",
+      "industry": "Fintech",
+      "jobs": [
+        {
+          "id": "job-007",
+          "title": "DevOps Engineer",
+          "bannerImage": "https://i.ibb.co/C5L8wNFk/rsz-1pexels-fauxels-3183197.jpg",
+          "location": "New York, NY",
+          "salary": "$95,000 - $120,000",
+          "jobType": "Full-time",
+          "time":"9A.M - 6P.M",
+          "description": "Design CI/CD pipelines and manage cloud infrastructure.",
+          "requirements": [
+            "AWS, Docker, Kubernetes experience",
+            "Infrastructure as code (Terraform)",
+            "Strong scripting skills (Bash, Python)",
+            "Security best practices knowledge",
+            "Monitoring and logging tools (Grafana, Prometheus)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Adobe",
+      "logo": "https://i.ibb.co/tPHD6zW4/adobe.png",
+      "location": "Los Angeles, CA",
+      "website": "https://mediabox.tv",
+      "industry": "Media & Entertainment",
+      "jobs": [
+        {
+          "id": "job-008",
+          "title": "Video Editor",
+          "bannerImage": "https://i.ibb.co/DgbNwd1X/rsz-pexels-fauxels-3184357.jpg",
+          "location": "Los Angeles, CA",
+          "salary": "$50,000 - $65,000",
+          "jobType": "Full-time",
+          "time":"9A.M - 6P.M",
+          "description": "Edit high-quality video content for online streaming platforms.",
+          "requirements": [
+            "Proficiency in Adobe Premiere and After Effects",
+            "Strong storytelling and editing skills",
+            "Experience with motion graphics",
+            "Attention to detail",
+            "Good sense of pacing and rhythm"
+          ]
+        }
+      ]
+    }
+  ]
+  

@@ -13,40 +13,42 @@ import ForgotPassword from "../pages/ForgotPassword/ForgotPassword";
 
 
 export const router = createBrowserRouter([
-  {
-    path: "/",
-    Component: Root,
-    children:[
-        {
-            index:true,
-            Component:Home
-        },
-        {
-            path:"/apply",
-             element:<PrivateRoute><Apply></Apply></PrivateRoute>
-        },
-        {
-            path:"/about",
-            Component:About
-        },
-        {
-            path:"/login",
-            Component:Login
-        },
-        {
-            path:"/register",
-            Component:Register
-        },
-        {
-            path:"/profile",
-            element:<PrivateRoute><Profile></Profile></PrivateRoute>
-        },
-         {
-            path:"/forgot-password",
-            Component: ForgotPassword
-        },
+    {
+        path: "/",
+        Component: Root,
+        children: [
+            {
+                index: true,
+                Component: Home,
+                hydrateFallbackElement: <p>Loading, please wait.......</p>,
+                loader: () => fetch('../data.json').then(res => res.json()),
+            },
+            {
+                path: "/apply",
+                element: <PrivateRoute><Apply></Apply></PrivateRoute>
+            },
+            {
+                path: "/about",
+                Component: About
+            },
+            {
+                path: "/login",
+                Component: Login
+            },
+            {
+                path: "/register",
+                Component: Register
+            },
+            {
+                path: "/profile",
+                element: <PrivateRoute><Profile></Profile></PrivateRoute>
+            },
+            {
+                path: "/forgot-password",
+                Component: ForgotPassword
+            },
 
 
-    ]
-  },
+        ]
+    },
 ]);

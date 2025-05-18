@@ -13,16 +13,16 @@ const Extra2 = () => {
                         Popular Categories
                     </h2>
                     <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-sm">
-                        <li className="bg-white shadow rounded-lg p-4 text-center hover:bg-blue-50 transition duration-200">
+                        <li className="bg-orange-200 shadow rounded-lg p-4 text-center hover:bg-blue-50 transition duration-200">
                             Frontend Development
                         </li>
-                        <li className="bg-white shadow rounded-lg p-4 text-center hover:bg-blue-50 transition duration-200">
+                        <li className="bg-orange-200 shadow rounded-lg p-4 text-center hover:bg-blue-50 transition duration-200">
                             Backend Development
                         </li>
-                        <li className="bg-white shadow rounded-lg p-4 text-center hover:bg-blue-50 transition duration-200">
+                        <li className="bg-orange-200 shadow rounded-lg p-4 text-center hover:bg-blue-50 transition duration-200">
                             UI/UX Design
                         </li>
-                        <li className="bg-white shadow rounded-lg p-4 text-center hover:bg-blue-50 transition duration-200">
+                        <li className="bg-orange-200 shadow rounded-lg p-4 text-center hover:bg-blue-50 transition duration-200">
                             DevOps
                         </li>
                     </ul>

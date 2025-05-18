@@ -11,7 +11,7 @@ const Extra1 = () => {
                 </div>
                 <div className="flex justify-between">
                     <span>Junior Frontend - Shopify</span>
-                    <span className="text-yellow-600 font-semibold">Pending</span>
+                    <span className="text-fuchsia-500 font-semibold">Pending</span>
                 </div>
                 <div className="flex justify-between">
                     <span>React Intern - Netflix</span>

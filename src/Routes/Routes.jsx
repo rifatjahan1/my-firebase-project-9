@@ -10,6 +10,7 @@ import PrivateRoute from "../PrivateRoutes/PrivateRoute";
 import Profile from "../pages/Profile/Profile";
 import Apply from "../Components/Apply/Apply";
 import ForgotPassword from "../pages/ForgotPassword/ForgotPassword";
+import CompanyDetails from "../pages/CompanyDetails/CompanyDetails";
 
 
 export const router = createBrowserRouter([
@@ -47,6 +48,13 @@ export const router = createBrowserRouter([
                 path: "/forgot-password",
                 Component: ForgotPassword
             },
+      {
+        path: '/companydetails/:id',
+        Component: CompanyDetails,
+        hydrateFallbackElement: <p>Loading, please wait.......</p>,
+        loader: () => fetch('../data.json').then(res => res.json()),
+
+      },
 
 
         ]
